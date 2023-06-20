@@ -9,5 +9,5 @@ RUN yarn install --production && yarn cache clean
 
 COPY . /app
 
-ENV NODE_ENV production
+ENV NODE_ENV development
 ENTRYPOINT ["node", "-r", "esm", "./bin/server"]
