@@ -10,4 +10,4 @@ RUN yarn install --production && yarn cache clean
 COPY . /app
 
 ENV NODE_ENV development
-ENTRYPOINT ["node", "-r", "esm", "./bin/server --port 3000"]
+ENTRYPOINT ["node", "-r", "esm", "./bin/server"]
